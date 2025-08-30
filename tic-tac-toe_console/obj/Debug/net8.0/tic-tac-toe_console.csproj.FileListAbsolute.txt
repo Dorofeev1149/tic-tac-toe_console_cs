@@ -1,0 +1,14 @@
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\bin\Debug\net8.0\tic-tac-toe_console.exe
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\bin\Debug\net8.0\tic-tac-toe_console.deps.json
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\bin\Debug\net8.0\tic-tac-toe_console.runtimeconfig.json
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\bin\Debug\net8.0\tic-tac-toe_console.dll
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\bin\Debug\net8.0\tic-tac-toe_console.pdb
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\obj\Debug\net8.0\tic-tac-toe_console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\obj\Debug\net8.0\tic-tac-toe_console.AssemblyInfoInputs.cache
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\obj\Debug\net8.0\tic-tac-toe_console.AssemblyInfo.cs
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\obj\Debug\net8.0\tic-tac-toe_console.csproj.CoreCompileInputs.cache
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\obj\Debug\net8.0\tic-tac-toe_console.dll
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\obj\Debug\net8.0\refint\tic-tac-toe_console.dll
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\obj\Debug\net8.0\tic-tac-toe_console.pdb
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\obj\Debug\net8.0\tic-tac-toe_console.genruntimeconfig.cache
+C:\Users\dorof\OneDrive\Рабочий стол\CSharp Projects\tic-tac-toe_console\tic-tac-toe_console\obj\Debug\net8.0\ref\tic-tac-toe_console.dll
