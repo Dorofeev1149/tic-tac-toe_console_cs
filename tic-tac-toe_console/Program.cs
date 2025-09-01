@@ -4,20 +4,20 @@ using System.Runtime.ExceptionServices;
 
 public class Program
 {
-    public static int Random_Choice_Player()
+    private static int Random_Choice_Player()
     {
         Random random_player = new Random();
         int random_choice_player = random_player.Next(0, 2);
         return random_choice_player;
     }
-    public static String[] Field_Generated()
+    private static String[] Field_Generated()
     {
         List<String> field = new List<String>();
         string[] newField = { "-", "-", "-", "-", "-", "-", "-", "-", "-" };
         field.AddRange(newField);
         return field.ToArray();
     }
-    public static void Field_Output(String[] fields)
+    private static void Field_Output(String[] fields)
     {
         Console.WriteLine();
         short i = 0;
@@ -29,14 +29,14 @@ public class Program
         }
         Console.WriteLine();
     }
-    public static String InversionPlayer(int choice_player)
+    private static String InversionPlayer(int choice_player)
     {
         String player = "";
         if (choice_player == 0) { player = "cross"; }
         else if (choice_player == 1) { player = "zero"; }
         return player;
     }
-    public static void MakingMove(String[] fields, String player)
+    private static void MakingMove(String[] fields, String player)
     {
         while (true)
         {
@@ -112,15 +112,16 @@ public class Program
             }
         }
     }
-    public static int ChangePlayer(int player)
+    private static int ChangePlayer(int player)
     {
         if (player == 0) { player = 1; }
         else if (player == 1) { player = 0; }
         return player;
     }
-    public static bool CheckWin(String[] fields, int player)
+    private static List<String> CheckWin(String[] fields, int player)
     {
         bool win = false;
+        bool isDraw = false;
         if (fields[0] == fields[4] && fields[4] == fields[8]) { win = true; }
         else if (fields[2] == fields[4] && fields[4] == fields[6] && fields[4] != "-") { win = true; }
         else if (fields[0] == fields[3] && fields[3] == fields[6] && fields[3] != "-") { win = true; }
@@ -129,9 +130,17 @@ public class Program
         else if (fields[0] == fields[1] && fields[1] == fields[2] && fields[1] != "-") { win = true; }
         else if (fields[3] == fields[4] && fields[4] == fields[5] && fields[4] != "-") { win = true; }
         else if (fields[6] == fields[7] && fields[7] == fields[8] && fields[7] != "-") { win = true; }
-        return win;
+        else if (fields[0] != "-" && fields[1] != "-" && fields[2] != "-" && fields[3] != "-" && 
+            fields[4] != "-" && fields[5] != "-" && fields[6] != "-" && fields[7] != "-" && fields[8] != "-")
+        {
+            isDraw = true;
+        }
+        List<String> data = new List<String>();
+        string[] newData = { win.ToString(), isDraw.ToString() };
+        data.AddRange(newData);
+        return data;
     }
-    public static void Main(String[] args)
+    private static void Main(String[] args)
     {
         while (true)
         {
@@ -144,8 +153,10 @@ public class Program
                 String player = InversionPlayer(choice_player); // Inversion of the player in the title
                 Console.WriteLine($"The {player} walks");
                 MakingMove(fields, player); // Making a move
-                bool check = CheckWin(fields, choice_player); // Check the winnings
-                if (check == true) { Console.WriteLine($"Won the {player}"); break; }
+                Console.Clear();
+                List<String> check = CheckWin(fields, choice_player); // Check the winnings
+                if (check[0] == "True") { Console.WriteLine($"Won the {player}"); break; }
+                if (check[1] == "True") { Console.WriteLine($"Draw!"); break; }
                 choice_player = ChangePlayer(choice_player); // Change player
             }
         }
